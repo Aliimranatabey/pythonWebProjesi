@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+}
+
+/* Table Styles */
+.table {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.table th, .table td {
+    border-top: none;
+}
+
+/* General Margins and Padding */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Leaderboard Table Styles */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,23 @@
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL,
+    nickname TEXT NOT NULL,
+    score INTEGER DEFAULT 0
+);
+
+
+CREATE TABLE questions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    text TEXT NOT NULL,
+    options TEXT NOT NULL,
+    correct_option TEXT NOT NULL
+);
+
+
+INSERT INTO users (username, password, nickname) VALUES ('alice', 'hashed_password', 'Alice');
+INSERT INTO users (username, password, nickname) VALUES ('bob', 'hashed_password', 'Bob');
+
+INSERT INTO questions (text, options, correct_option) VALUES ('What is 2 + 2?', 'A) 3, B) 4, C) 5, D) 6', 'B) 4');
+INSERT INTO questions (text, options, correct_option) VALUES ('What is the capital of France?', 'A) London, B) Berlin, C) Paris, D) Madrid', 'C) Paris');
